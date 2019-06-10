@@ -26,7 +26,7 @@ jobs:
     docker:
       - image: google/cloud-sdk
     environment:
-      - PROJECT_NAME: "Kubernetes-deployer"
+      - PROJECT_NAME: "kubernetes-deployer"
       - GOOGLE_PROJECT_ID: "kubernetes-deployer-bfad9"
       - GOOGLE_COMPUTE_ZONE: "us-central1-a"
       - GOOGLE_CLUSTER_NAME: "standard-cluster-1"
