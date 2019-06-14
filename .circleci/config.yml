@@ -25,6 +25,8 @@ jobs:
   deploy_to_staging:
     docker:
       - image: google/cloud-sdk
+    requires:
+      -build_and_test
     environment:
       - PROJECT_NAME: "kubernetes-deployer"
       - GOOGLE_PROJECT_ID: "kubernetes-deployer-bfad9"
