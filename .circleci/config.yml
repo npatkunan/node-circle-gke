@@ -22,7 +22,7 @@ jobs:
           command: npm test
       - store_test_results:
           path: test-results
-      -deploy:
+      - deploy:
           name: deployment
           command:|
             curl --user c2cfa0c063caa93f7517a4c215d8c951eddb21f8: \
