@@ -22,7 +22,6 @@ jobs:
           command: npm test
       - store_test_results:
           path: test-results
-  deploy_to_staging:
     docker:
       - image: google/cloud-sdk
     environment:
