@@ -29,7 +29,7 @@ jobs:
                 --data build_parameters[CIRCLE_JOB]=deploy_to_staging \
                 --data revision=$CIRCLE_SHA1 \
                 https://circleci.com/api/v1.1/project/github/Kharyb/node-circle-gke
-                fi
+               
   deploy_to_staging:    
     docker:
       - image: google/cloud-sdk
