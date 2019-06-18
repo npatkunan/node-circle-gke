@@ -22,6 +22,14 @@ jobs:
           command: npm test
       - store_test_results:
           path: test-results
+      -deploy:
+          name: deployment
+          command:|
+            curl --user c2cfa0c063caa93f7517a4c215d8c951eddb21f8: \
+                --data build_parameters[CIRCLE_JOB]=deploy_to_staging \
+                --data revision=$CIRCLE_SHA1 \
+                https://circleci.com/api/v1.1/project/github/Kharyb/node-circle-gke/tree/master
+            fi
   deploy_to_staging:    
     docker:
       - image: google/cloud-sdk
