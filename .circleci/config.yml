@@ -24,7 +24,7 @@ jobs:
           path: test-results
       - deploy:
           name: deployment
-          command:|
+          command: |
             curl --user c2cfa0c063caa93f7517a4c215d8c951eddb21f8: \
                 --data build_parameters[CIRCLE_JOB]=deploy_to_staging \
                 --data revision=$CIRCLE_SHA1 \
