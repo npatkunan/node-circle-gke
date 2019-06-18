@@ -1,4 +1,4 @@
-# KubernetesVoiceDeployer using CI/CD with CircleCI and GKE
+# Google assistant Kubernetes Deployer using CI/CD with CircleCI and GKE
 
 A Dialogflow agent for deploying kubernetes clusters in GKE using voice commands
 
@@ -9,6 +9,8 @@ Kubernetes Engine (GKE).
 The config.yml file has been edited. It now makes an API call to CircleCI in order to start the deployment job from the build job. 
 This enables integration with Dialogflow via webhook. 
 
+## On GKE:
+* Create a new cluster 
 
 ## On Dialogflow:
 * Create a new Agent
